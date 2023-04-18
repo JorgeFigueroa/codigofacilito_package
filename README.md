@@ -3,3 +3,6 @@ venv\Scripts\activate
 
 pip install requests
 pip freeze > requirements.txt
+
+
+python -m codigofacilito
