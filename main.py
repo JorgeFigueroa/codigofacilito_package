@@ -1,4 +1,4 @@
-from codigofacilito import unreleased
+from codigofacilito_jorgef import unreleased
 
 if __name__ == "__main__":
     workshops = unreleased()

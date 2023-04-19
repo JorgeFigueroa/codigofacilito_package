@@ -1,29 +1,29 @@
-from pathlib import Path
+from pathlib import Path  # > 3.6
 from setuptools import setup
 
 this_directory = Path(__file__).parent
 long_description = (this_directory / "README.md").read_text()
 
-VERSION = '0.0.1'
-DESCRIPTION = 'Description'
-PACKAGE_NAME = 'Package Name'
-AUTHOR = ''
-EMAIL = ''
-GITHUB_URL = ''
+VERSION = '0.0.2'
+DESCRIPTION = 'este paquete de prueba, permite consumir el api de codigo facilito'
+PACKAGE_NAME = 'codigofacilito_jorgef'
+AUTHOR = 'Jorge figueroa'
+EMAIL = 'atientas0412@gmail.com'
+GITHUB_URL = 'https://github.com/JorgeFigueroa/codigofacilito_package'
 
 setup(
-    name = PACKAGE_NAME,
-    packages = [DESCRIPTION],
-    version = VERSION,
+    name=PACKAGE_NAME,
+    packages=[PACKAGE_NAME],
+    version=VERSION,
     license='MIT',
-    description = DESCRIPTION,
+    description=DESCRIPTION,
     long_description_content_type="text/markdown",
     long_description=long_description,
-    author = AUTHOR,
-    author_email = EMAIL,
-    url = GITHUB_URL,
-    keywords = [],
-    install_requires=[ 
+    author=AUTHOR,
+    author_email=EMAIL,
+    url=GITHUB_URL,
+    keywords=['codigofacilito_jorgef'],
+    install_requires=[
         'requests',
     ],
     classifiers=[

@@ -1,4 +1,4 @@
-from codigofacilito import unreleased
+from codigofacilito_jorgef import unreleased
 import logging
 
 """
@@ -9,13 +9,11 @@ ERROR -> 40
 CRITICAL -> 50
 """
 
-logging.basicConfig(level=logging.DEBUG)
+logging.basicConfig(level=logging.INFO)
 
 if __name__ == "__main__":
     logging.debug(">>> start paquete")
-    workshops = unreleased()
-    logging.debug("workshops:", workshops)
-    print("workshops:", workshops)
+    # workshops = unreleased()
+    logging.debug(help(unreleased.__doc__))
 
     logging.debug(">>> end paquete")
-
